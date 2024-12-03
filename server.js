@@ -16,8 +16,10 @@ mongoose
     console.log("cnnected to the database");
 });
 
-const userRouth= require("./route/user.route");
-app.use("/user", userRouth);
+const userRoute= require("./route/user.route");
+const todoRoute= require("./route/todo.route");
+app.use("/user", userRoute);
+app.use("/todo", todoRoute);
 
 app.get("/",(req,res) =>{
     res.send("anindya");

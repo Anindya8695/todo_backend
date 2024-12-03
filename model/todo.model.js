@@ -1,12 +1,12 @@
 const mongoose =require('mongoose');
 const { type } = require("os");
-const userSchema=mongoose.Schema({
+const Todoschema=mongoose.Schema({
     text:{
-        type: string,
+        type: String,
         required: true,
     },
     status:{
-        type: string,
+        type: String,
         default: "not Done",
     },
     user:{
